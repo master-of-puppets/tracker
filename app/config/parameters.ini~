@@ -1,0 +1,13 @@
+[parameters]
+    database_driver="pdo_mysql"
+    database_host="localhost"
+    database_port=""
+    database_name="tracker"
+    database_user="tracker"
+    database_password="DfyEScTndhDMb53Y"
+    mailer_transport="gmail"
+    mailer_host="smtp.gmail.com"
+    mailer_user="rjcnz333"
+    mailer_password="Z5Sn$Kutaft"
+    locale="ru"
+    secret="8ba8dfcfa91f3108f98a8476aa31bc364"
