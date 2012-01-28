@@ -1,6 +1,34 @@
+fos_user_security:
+    resource: "@FOSUserBundle/Resources/config/routing/security.xml"
+
+fos_user_profile:
+    resource: "@FOSUserBundle/Resources/config/routing/profile.xml"
+    prefix: /profile
+
+fos_user_register:
+    resource: "@FOSUserBundle/Resources/config/routing/registration.xml"
+    prefix: /register
+
+fos_user_resetting:
+    resource: "@FOSUserBundle/Resources/config/routing/resetting.xml"
+    prefix: /resetting
+
+fos_user_change_password:
+    resource: "@FOSUserBundle/Resources/config/routing/change_password.xml"
+    prefix: /profile
+
+RootyUserBundle:
+    resource: "@RootyUserBundle/Resources/config/routing.yml"
+    prefix:   /
+
 RootyDefaultBundle:
     resource: "@RootyDefaultBundle/Resources/config/routing.yml"
     prefix:   /
+
+RootyTorrentBundle:
+    resource: "@RootyTorrentBundle/Controller/"
+    type: annotation
+	prefix: /
 
 # Internal routing configuration to handle ESI
 #_internal:
@@ -8,5 +36,5 @@ RootyDefaultBundle:
 #   prefix:   /_internal
 
 _index:
-	pattern: /
-	defaults: {_controller: RootyDefaultBundle:Default:index}
+    pattern: /
+    defaults: {_controller: RootyDefaultBundle:Default:index}
