@@ -68,3 +68,6 @@ fos_user:
           enabled: false
         form:
             type: rooty_user_registration
+    resetting:
+        form:
+            type: rooty_user_resetting
